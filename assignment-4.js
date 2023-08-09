@@ -26,19 +26,22 @@ function matchFinder(string1, string2) {
 //----------------------------- Problem -3---------------------------------
 function sortMaker(arr) {
     if (arr[0] < 0 || arr[1] < 0) {
-        console.log("Invalid Input")
+        return "invalid Input";
     }
     else if (arr[0] == arr[1]) {
-        console.log("Equal")
-    }
-    else if (arr[0] > arr[1]) {
-        console.log(arr)
+        return "equal";
     }
     else {
-        console.log([arr[0], arr[1]] = [arr[1], arr[0]]);
+        if (arr[0] > arr[1]) {
+            return arr;
+        }
+        else {
+            let bigToSmall = [arr[0], arr[1]] = [arr[1], arr[0]];
+            return bigToSmall;
+        }
+
     }
 }
-
 //--------------------------- Problem -4---------------------------------
 function findAddress(obj) {
     const value = Object.values(obj);
