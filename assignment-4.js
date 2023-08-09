@@ -10,10 +10,16 @@ function cubeNumber(number) {
 }
 
 //-------------------------------Problem -2-----------------------------
+
 function matchFinder(string1, string2) {
-    const searchString=string1.includes(string2);
-    console.log(searchString);
-    return searchString;
+    if ((typeof string1 !== "string") || (typeof string2 !== "string")) {
+        return "please provide me a valid file name (string)"
+    }
+    else {
+        const searchString = string1.includes(string2);
+        return searchString;
+    }
+
 }
 
 
@@ -35,11 +41,11 @@ function sortMaker(arr) {
 
 //--------------------------- Problem -4---------------------------------
 function findAddress(obj) {
-    const value=Object.values(obj);
+    const value = Object.values(obj);
     console.log(value)
     return value;
 }
-findAddress({society: "Earth Perfect"})
+findAddress({ society: "Earth Perfect" })
 
 
 //--------------------------- Problem -5---------------------------------
