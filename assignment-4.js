@@ -52,6 +52,7 @@ findAddress({ society: "Earth Perfect" })
 
 
 //--------------------------- Problem -5---------------------------------
+
 function canPay(changeArray, totalDue) {
     let sum = 0;
     for (let i = 0; i < changeArray.length; i++) {
@@ -59,13 +60,15 @@ function canPay(changeArray, totalDue) {
 
     }
     if (sum >= totalDue) {
-        console.log("True");
+        return true;
     }
     else if (changeArray.length === 0) {
-        console.log("This array is empty now");
+        return "This array is empty now";
     }
     else {
-        console.log("False")
+        return false;
     }
 
 }
+
+
