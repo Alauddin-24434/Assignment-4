@@ -1,10 +1,14 @@
 //---------------------------------- Problem -1--------------------------
 function cubeNumber(number) {
-    let cube= number* number* number;
-    let result=cube;
-    console.log(result);
-    return result;
+    if (typeof number !== "number") {
+        return "please provide a number";
+    }
+    else {
+        let cube = number * number * number;
+        return cube;
+    }
 }
+
 //-------------------------------Problem -2-----------------------------
 function matchFinder(string1, string2) {
     const searchString=string1.includes(string2);
