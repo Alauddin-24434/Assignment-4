@@ -15,15 +15,7 @@ function matchFinder(string1, string2) {
 
 //----------------------------- Problem -3---------------------------------
 function sortMaker(arr) {
-    let sum = 0;
-    for (let i = 0; i < arr.length; i++) {
-        sum += arr[i];
-    }
-    if (sum < 0) {
-        console.log("Invalid Input")
-
-    }
-    else if (arr[1] < 0) {
+    if (arr[0] < 0 || arr[1] < 0) {
         console.log("Invalid Input")
     }
     else if (arr[0] == arr[1]) {
